@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <form action="http://localhost:5000/submit" method="post">
+            <label for="reg_no">Register Number:</label>
+            <input type="text" id="reg_no" name="reg_no" placeholder="Enter your Register number">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name">
+            <label for="email">Email:</label>
+            <input type="email" name="eamil" placeholder="Enter your Mail id">
+            <label for="branch">Branch:</label>
+            <select name="branch" id="branch">
+                <option value="IT">IT</option>
+                <option value="CSE">CSE</option>
+                <option value="AI&DS">AI&DS</option>
+                <option value="ECE">ECE</option>
+                <option value="CIVIL">CIVIL</option>
+                <option value="Others">Others</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
